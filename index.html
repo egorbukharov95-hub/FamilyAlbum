@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nordic Memories | Семейный альбом</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <header>
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <i class="fas fa-tree"></i>
+          <span>Nordic Memories</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav-link active">Главная</a></li>
+            <li><a href="#gallery" class="nav-link">Галерея</a></li>
+            <li><a href="#family" class="nav-link">Семья</a></li>
+            <li><a href="#years" class="nav-link">Годы</a></li>
+            <li>
+              <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Герой -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Наша история в кадрах</h1>
+          <p class="subtitle">Минимализм. Естественность. Память.</p>
+          <p class="description">
+            Скандинавская простота в каждом моменте. Этот альбом — хроника наших
+            самых важных дней.
+          </p>
+          <a href="#gallery" class="btn-primary">
+            <i class="fas fa-images"></i>
+            Смотреть альбом
+          </a>
+        </div>
+        <div class="hero-image">
+          <div class="image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Семейный момент"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Годы -->
+    <section class="years-section" id="years">
+      <div class="container">
+        <h2 class="section-title">По годам</h2>
+        <div class="years-grid">
+          <div class="year-card" data-year="2024">
+            <div class="year-number">2024</div>
+            <div class="year-count">12 фото</div>
+          </div>
+          <div class="year-card" data-year="2023">
+            <div class="year-number">2023</div>
+            <div class="year-count">24 фото</div>
+          </div>
+          <div class="year-card" data-year="2022">
+            <div class="year-number">2022</div>
+            <div class="year-count">18 фото</div>
+          </div>
+          <div class="year-card" data-year="2021">
+            <div class="year-number">2021</div>
+            <div class="year-count">22 фото</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Галерея</h2>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="family">Семья</button>
+            <button class="filter-btn" data-filter="travel">Путешествия</button>
+            <button class="filter-btn" data-filter="nature">Природа</button>
+            <button class="filter-btn" data-filter="home">Дом</button>
+          </div>
+        </div>
+        <div class="gallery-grid" id="photo-gallery">
+          <!-- Фото загружаются через JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- О семье -->
+    <section class="family-section" id="family">
+      <div class="container">
+        <h2 class="section-title">Наша семья</h2>
+        <div class="family-members">
+          <div class="member">
+            <div class="member-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Мария"
+              />
+            </div>
+            <h3>Мария</h3>
+            <p>Мама, дизайнер</p>
+            <div class="member-quote">"Люблю простоту и уют в деталях"</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Алексей"
+              />
+            </div>
+            <h3>Алексей</h3>
+            <p>Папа, архитектор</p>
+            <div class="member-quote">
+              "Ценю функциональность и чистые линии"
+            </div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Анна"
+              />
+            </div>
+            <h3>Анна</h3>
+            <p>Дочь, 9 лет</p>
+            <div class="member-quote">"Обожаю рисовать и читать сказки"</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Максим"
+              />
+            </div>
+            <h3>Максим</h3>
+            <p>Сын, 5 лет</p>
+            <div class="member-quote">"Люблю конструктор и природу"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цитата -->
+    <section class="quote-section">
+      <div class="container">
+        <blockquote>
+          <p>"Самые важные вещи — не вещи, а моменты."</p>
+          <cite>— Скандинавская мудрость</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <i class="fas fa-tree"></i>
+              <span>Nordic Memories</span>
+            </div>
+            <p>Семейный фотоальбом в стиле скандинавского минимализма</p>
+          </div>
+          <div class="footer-links">
+            <h4>Разделы</h4>
+            <ul>
+              <li><a href="#home">Главная</a></li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#family">Семья</a></li>
+              <li><a href="#years">Годы</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Контакты</h4>
+            <p><i class="fas fa-envelope"></i> family@nordicmemories.ru</p>
+            <p><i class="fas fa-map-marker-alt"></i> Санкт-Петербург, Россия</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Nordic Memories. Сделано с <i class="fas fa-heart"></i></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="photo-modal">
+      <div class="modal-content">
+        <button class="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-image">
+          <img id="modal-img" src="" alt="" />
+        </div>
+        <div class="modal-info">
+          <div class="modal-date" id="modal-date"></div>
+          <div class="modal-description" id="modal-description"></div>
+          <div class="modal-tags" id="modal-tags"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
